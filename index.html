@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pl" dir="ltr"> 
+<head>     
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">     
+	<title>Get Books Price on Fingertip</title> 
+	<meta name="description" content="Serwis internetowy dla miłośników książek"> 
+	<meta name="keywords" content="książka, recenzja, serwis, czytelnik, autor"> 
+	<meta name="author" content="Piotr"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap&subset=latin-ext" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>	
+	<!-- <script src="js/menu.js"></script>	 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src=app.js></script>
+</head> 
+<body id="main">
+  <ul class="topnav">
+    <li><p id="name" style="text-align:center; font-family:verdana; padding-left: 10px;padding-top: 20px;">Welcome Reders!!</p></li>
+    <li style="padding-left: 30px;"><a class="active" href="https://theceostory.in/blog/top-10-best-authors-in-india/" target="_blank" id="autht">Best Authors</a></li>
+    <li><a href="https://www.publishersweekly.com/pw/by-topic/industry-news/index.html" target="_blank" id="news">News</a></li>
+    <li><a href="https://www.goodreads.com/shelf/show/interesting-topics" target="_blank" id="ibook">Interesting Books</a></li>
+    <li class="right"><a href="https://www.aii.unimelb.edu.au/blog/the-10-best-libraries-in-india/" target="_blank" id="lib">Best Libraries</a></li>
+  </ul>
+  
+<div>
+<h1 style="text-align:center" class="header">Find the Price of books</h1>
+</div>
+
+
+<!--dropdown-->
+<div class="container" style="padding-left: 5%; padding-top: 7%;">
+
+<!-- Genre -->
+<select id="Ultra" onchange="run()" style="background-color: #ffffff; border: 6px solid transparent;">  <!--Call run() function-->
+  <option value="Non Fiction">Non Fiction</option>
+  <option value="Fiction">Fiction</option>
+
+</select>
+<br><br>
+<input type="text" style="visibility: hidden;" id="srt" placeholder="get value on option select">
+<!-- Genre -->
+
+
+<!-- Auth -->
+<div style="padding-top: 3%">
+<select id="Ult" onchange="runp()" style="background-color: #ffffff; border: 6px solid transparent;" >  <!--Call run() function-->
+  <option value="Glenn Beck">Glenn Beck</option>
+  <option value="Neil deGrasse Tyson">Neil deGrasse Tyson</option>
+  <option value="Mark Twain">Mark Twain</option>
+  <option value="DK">DK</option>
+  <option value="Angie Grace">Angie Grace</option>
+  <option value="Ina Garten">Ina Garten</option>
+  <option value="Michelle Obama">Michelle Obama</option>
+  <option value="Atul Gawande">Atul Gawande</option>
+  <option value="Ta-Nehisi Coates">Ta-Nehisi Coates</option>
+  <option value="Bruce Springsteen">Bruce Springsteen </option>
+  <option value="Stephenie Meyer">Stephenie Meyer</option>
+  <option value="Glenn Beck">Glenn Beck</option>
+  <option value="Bill Martin Jr.">Bill Martin Jr.</option>
+  <option value="Jeff Kinney">Jeff Kinney</option>
+  <option value="Sasha O'Hara">Sasha O'Hara</option>
+  <option value="David Goggins">David Goggins</option>
+
+</select>
+<br><br>
+<input type="text" style="visibility: hidden;" id="srt1" placeholder="get value on option select">
+
+</div>
+<!-- Auth -->
+<!-- Book -->
+
+<div style="padding-top: 3%">
+  <select id="Ult1" onchange="runpb()" style="background-color: #ffffff; border: 6px solid transparent;" >  <!--Call run() function-->
+    <option value="Arguing with Idiots: How to Stop Small Minds and Big Government">Arguing with Idiots: How to Stop Small Minds and Big Government</option>
+    <option value="Astrophysics for People in a Hurry">Astrophysics for People in a Hurry</option>
+    <option value="Autobiography of Mark Twain, Vol. 1">Autobiography of Mark Twain, Vol. 1</option>
+    <option value="Baby Touch and Feel: Animals">Baby Touch and Feel: Animals</option>
+    <option value="Balance (Angie's Extreme Stress Menders)">Balance (Angie's Extreme Stress Menders)</option>
+    <option value="Barefoot Contessa Foolproof: Recipes You Can Trust: A Cookbook">Barefoot Contessa Foolproof: Recipes You Can Trust: A Cookbook</option>
+    <option value="Becoming">Becoming</option>
+    <option value="Being Mortal: Medicine and What Matters in the End">Being Mortal: Medicine and What Matters in the End</option>
+    <option value="Between the World and Me">Between the World and Me</option>
+    <option value="Born to Run">Born to Run</option>
+    <option value="Breaking Dawn (The Twilight Saga, Book 4)">Breaking Dawn (The Twilight Saga, Book 4)</option>
+    <option value="Broke: The Plan to Restore Our Trust, Truth and Treasure">Broke: The Plan to Restore Our Trust, Truth and Treasure</option>
+    <option value="Brown Bear, Brown Bear, What Do You See?">Brown Bear, Brown Bear, What Do You See?</option>
+    <option value="Cabin Fever (Diary of a Wimpy Kid, Book 6)">Cabin Fever (Diary of a Wimpy Kid, Book 6)</option>
+    <option value="Calm the F*ck Down: An Irreverent Adult Coloring Book (Irreverent Book Series)">Calm the F*ck Down: An Irreverent Adult Coloring Book (Irreverent Book Series)</option>
+    <option value="Can't Hurt Me: Master Your Mind and Defy the Odds">Can't Hurt Me: Master Your Mind and Defy the Odds</option>
+  
+  </select>
+  <br><br>
+  <input type="text" style="visibility: hidden;" id="srt2" placeholder="get value on option select">
+  
+  </div>
+  <!-- Book -->
+<!-- </div> -->
+
+<input type="text" style="border: 0cm;" id="price" placeholder="Predicted Price!!">
+</div>
+
+</div>
+
+  
+
+    
+</body>
+</html>

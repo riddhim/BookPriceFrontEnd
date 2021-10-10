@@ -1,0 +1,137 @@
+#main {
+    background-image: url("new.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 10;
+    
+   }
+
+   body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+#name{
+  font-size: large;
+}
+#autht{
+  font-size: large;
+}
+#news{
+  font-size: large;
+}
+#ibook{
+  font-size: large;
+}
+#lib{
+  font-size: large;
+}
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color:#333;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.header{
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 7em;
+    text-shadow: 2px 4px 20px #924df9;
+    color:white;
+    
+}
+
+#name{
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: burlywood;
+    text-shadow: 2px 4px 20px #924df9;
+}
+
+
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+
+.select--disabled {
+  cursor: not-allowed;
+  background-color: #eee;
+  background-image: linear-gradient(to top, #ddd, #eee 33%);
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.select + label {
+  margin-top: 2rem;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+#Ult{
+  font-weight: bold !important;
+  color: black !important;
+  background: #ffffff !important;
+  text-transform: uppercase;
+  font-size: medium;
+  font-family: cursive;
+}
+
+#Ultra{
+  font-weight: bold !important;
+  color: black !important;
+  background: #ffffff !important;
+  text-transform: uppercase;
+  font-size: medium;
+  font-family: cursive;
+}
+
+#Ult1{
+  font-weight: bold !important;
+  color: black !important;
+  background: #ffffff!important;
+  text-transform: uppercase;
+  font-size: medium;
+  font-family: cursive;
+}
+
+#price{
+
+  color: black !important;
+  background: #C5C6C7 !important;
+  text-transform: uppercase;
+  font-size: medium;
+  font-family: cursive;
+  border: 6px solid transparent;
+}
